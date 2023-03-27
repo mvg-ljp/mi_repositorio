@@ -22,6 +22,26 @@
     font-size: 20px;
     padding: 15px 20px;
 }
+@media(max-width:550px){
+   .navegador .fa-ellipsis-vertical{
+    display: block;
+    font-size: 32px;
+    margin: 10px;
+    color:#f0e3e5
+   }
+    .navegador ul{
+        top: 0;
+        position: fixed;
+        width: 150px;
+        height: 100vh;
+        z-index: 5;
+        background-color: #d5a2ad;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+}
   /*Fin Navegador*/
   /*Portada*/
   .portada{
@@ -100,12 +120,36 @@ main{
 
 }
 @media(max-width:700px){
-    .tarjeta{
-        background-color: black;
-        width: 250px;
-        border: 7px solid;
+    .titulo h1{
+        font-size: 32px ;
+        -webkit-text-stroke: 1px #560314;
+        text-align: center;
     }
-
+    .subtitulo{
+        font-size: 16px ;
+        text-decoration: none;
+    }
+    .producto-destacado{
+        border: 7px solid #560314;
+        width: 200px;
+        height: 370px;
+    }
+    .producto-destacado img{
+        width: 60%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .producto-destacado h4{
+        text-align: left;
+        font-family: 'Kanit', sans-serif;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    .producto-destacado p{
+        padding: 5px;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+    }
 }
 .redes{
     margin: 5px;
