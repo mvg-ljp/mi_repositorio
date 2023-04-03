@@ -151,13 +151,23 @@ main{
         text-align: center;
     }
 }
+footer{
+    background-color:#560314;
+    color:#ead2d7;
+    font-family: 'Kanit', sans-serif;
+    }
 .redes{
     margin: 5px;
     padding: 5px;
+    width: 25%;
+    height: 100%;
     background-color:#560314;
     color:#ead2d7;
     font-family: 'Kanit', sans-serif;
     font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
 .redes ul{
     list-style: none;
@@ -167,17 +177,6 @@ main{
     color:#ead2d7;
     font-family: 'Kanit', sans-serif;
     font-size: 18px;
-}
-.iconos-redes{
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    flex-wrap: wrap;
-}
-footer{
-    background-color:#560314;
-    color:#ead2d7;
-    font-family: 'Kanit', sans-serif;
 }
 /*servicios*/
 h2
