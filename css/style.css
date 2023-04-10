@@ -9,40 +9,28 @@
 .navegador {
     background-color: #560314;   
 }
-.navegador ul {
+.navegador .fa-bars{
+    font-size: 24px;
+    margin: 10px;
+    color:#ead2d7;
+    display: none;
+}
+.navegador ul{
     list-style: none;
     display: flex;
     justify-content: end;
-    }
+}
 .navegador ul li a {
-    display: block;
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
     color:#ead2d7;
     font-size: 20px;
     padding: 15px 20px;
 }
-@media(max-width:550px){
-   .navegador .fa-ellipsis-vertical{
-    display: block;
-    font-size: 32px;
-    margin: 10px;
-    color:#f0e3e5
-   }
-    .navegador ul{
-        top: 0;
-        position: fixed;
-        width: 150px;
-        height: 100vh;
-        z-index: 5;
-        background-color: #d5a2ad;
-        flex-direction: column;
-        justify-content: start;
-    }
-}
+
   /*Fin Navegador*/
   /*Portada*/
-  .portada{
+.portada{
     position: relative;
   }
 .portada img{
@@ -81,7 +69,7 @@ main{
 .destacados{
     display: flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .producto-destacado{
@@ -121,43 +109,12 @@ main{
 button:hover{
     background-color: black;    
 }
-.producto-destacado:hover{
+  .producto-destacado:hover{
     transition: 0.2s;
     border:solid #560314;
-    animation:;
+    animation;
 }
-@media(max-width:700px){
-    .titulo h1{
-        font-size: 32px ;
-        -webkit-text-stroke: 1px #560314;
-        text-align: center;
-    }
-    .subtitulo{
-        font-size: 16px ;
-        text-decoration: none;
-    }
-    .producto-destacado{
-        border: 7px solid #560314;
-        width: 200px;
-        height: 370px;
-    }
-    .producto-destacado img{
-        width: 60%;
-        height: 150px;
-        object-fit: cover;
-    }
-    .producto-destacado h4{
-        text-align: left;
-        font-family: 'Kanit', sans-serif;
-        font-size: 12px;
-        margin: 5px 0;
-    }
-    .producto-destacado p{
-        padding: 5px;
-        font-family: 'Kanit', sans-serif;
-        text-align: center;
-    }
-}
+
 /*pie de pagina*/
 footer{
     background-color:#560314;
@@ -217,6 +174,71 @@ section{
     font-size: 18px;
 }
 /*fin de pie de pagina*/
+@media (min-width:400px) and (max-width:700px){
+   .navegador .fa-bars{
+        display:block;
+        position: fixed;
+        font-size: 24px;
+        margin: 10px;
+        color: #ead2d7;
+        z-index: 5;
+   } 
+   .navegador ul{
+    display: none;
+   }
+ .fa-bars:hover + ul{
+    display: block;
+    flex-direction: column;    
+}
+    
+.navegador ul{
+ text-align:center; 
+ }
+    
+}
+
+@media(max-width:800px){
+    .titulo h1{
+        font-size: 32px ;
+        -webkit-text-stroke: 1px #560314;
+        text-align: center;
+    }
+    .subtitulo{
+        font-size: 16px ;
+        text-decoration: none;
+    }
+    .producto-destacado{
+        border: 7px solid #560314;
+        width: 200px;
+        height: 370px;
+    }
+    .producto-destacado img{
+        width: 60%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .producto-destacado h4{
+        text-align: left;
+        font-family: 'Kanit', sans-serif;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    .producto-destacado p{
+        padding: 5px;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+    }
+    footer{
+        padding: 5px;
+        font-size: 12px;       
+    }
+    footer section{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+    }
+}
 /*servicios*/
 h2
 .servicios-padre{
@@ -255,3 +277,7 @@ h2
     grid-area:"svc-hijo5";
 }
 
+/*shop*/
+/*ubicacion*/
+/*contacto*/
+/*pie de pagina*/
