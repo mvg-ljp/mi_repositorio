@@ -7,7 +7,8 @@
 
 /*Navegador*/
 .navegador {
-    background-color: #560314;   
+    background-color: #560314;
+    padding: 10px;   
 }
 .navegador .fa-bars{
     font-size: 24px;
@@ -37,7 +38,7 @@
     display: flex;
     width: 100%;
     height: 400px;
-    object-fit:cover;
+    object-fit:inherit;
     filter:sepia(35%);
 }
 
@@ -53,7 +54,16 @@
     font-family: 'Kanit', sans-serif;
     -webkit-text-stroke: 3px #560314;
     }
-
+.tt2{
+    color:#ead2d7 ;
+    font-size: 48px;
+    font-family: 'Kanit', sans-serif;
+    -webkit-text-stroke: 3px #560314;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
 /*Fin Portada*/
 main{
     margin: 0;
@@ -81,8 +91,8 @@ main{
     
     }
 .producto-destacado img{
-    width: 85%;
-    height: 350px;
+    width: 98%;
+    height: 400px;
     object-fit: cover;
 }
 .producto-destacado h4{
@@ -93,11 +103,11 @@ main{
 
 }
 .producto-destacado p{
-    padding: 10px;
+    padding: 2px;
     font-family: 'Kanit', sans-serif;
 }
 .producto-destacado button{
-    margin: 10px;
+    margin: 5px;
     padding: 7px 15px;
     border: 0;
     border-radius: 5px;
@@ -245,26 +255,7 @@ h2{
     text-align: center;
     width: 100%;
 }
-.svc{
-    display: flex; 
-    padding: 15 px;
-    margin: 10 px;
-  
-}
-.svc img{
-    width: 55%;
-    height: 450px;
-    padding: 10px;
-    margin: 10px;
-    
-}
-.svc .svcmenu{
-    width: 45%;
-    height: 450px;
-    padding: 10px;
-    margin: 10px;
 
-}
 
 /*shop*/
 main{
@@ -297,19 +288,19 @@ main{
 .producto1__img{
     padding: 3px;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 .producto1__tt{
     padding: 3px;
     text-align: center;
-    font-size: ;
+    font-size: 16px;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
 .producto1__texto{
     padding: 3px;
     text-align:start;
-    font-size: ;
+    font-size: 14px;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
@@ -332,19 +323,19 @@ main{
 .producto2__img{
     padding: 3px;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 .producto2__tt{
     padding: 3px;
     text-align: center;
-    font-size: ;
+    font-size: 16px;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
 .producto2__texto{
     padding: 3px;
     text-align:start;
-    font-size: ;
+    font-size:14px ;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
@@ -367,19 +358,19 @@ main{
 .producto3__img{
     padding: 3px;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 .producto3__tt{
     padding: 3px;
     text-align: center;
-    font-size: ;
+    font-size:16px ;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
 .producto3__texto{
     padding: 3px;
     text-align:start;
-    font-size: ;
+    font-size: 14px;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
@@ -407,14 +398,14 @@ main{
 .producto4__tt{
     padding: 3px;
     text-align: center;
-    font-size: ;
+    font-size:16px ;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
 .producto4__texto{
     padding: 3px;
     text-align:start;
-    font-size: ;
+    font-size:14px ;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
@@ -442,14 +433,14 @@ main{
 .producto5__tt{
     padding: 3px;
     text-align: center;
-    font-size: ;
+    font-size: 16px;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
 .producto5__texto{
     padding: 3px;
     text-align:start;
-    font-size: ;
+    font-size: 14px;
     font-family:'Kanit', sans-serif; ;
     color: #560314;
 }
