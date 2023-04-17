@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*titulos*/
 .titulo{
     background-color:#560314;
     display: flex;
@@ -29,6 +29,7 @@
     font-family: 'Kanit', sans-serif;
     -webkit-text-stroke: 1px #560314;
 }
+/*fin titulos*/
 
 /*Navegador*/
 .navegador {
@@ -40,9 +41,8 @@
     width: 100%;
     height: 35px;
     justify-content: center;
-   top: -5px;
-
-      
+    top: -5px;
+    
 }
 
 .navegador .fa-bars{
@@ -67,6 +67,7 @@
 }
 
   /*Fin Navegador*/
+
   /*Portada*/
 .portada{
     position: relative;
@@ -74,7 +75,7 @@
 .portada img{
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit:inherit;
     filter:sepia(35%);
 }
