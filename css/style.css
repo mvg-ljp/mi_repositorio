@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .titulo{
     background-color:#560314;
     display: flex;
@@ -28,6 +29,7 @@
     font-family: 'Kanit', sans-serif;
     -webkit-text-stroke: 1px #560314;
 }
+
 /*Navegador*/
 .navegador {
     background-color:#560314;
@@ -42,7 +44,6 @@
 
       
 }
-.
 
 .navegador .fa-bars{
     font-size: 24px;
@@ -198,27 +199,42 @@ section{
     font-size: 18px;
 }
 /*fin de pie de pagina*/
-@media (min-width:400px) and (max-width:700px){
-   .navegador .fa-bars{
-        display:block;
+@media (min-width:300px) and (max-width:799px){
+    .navegador ul {
+        display: none;
+
+    }
+    .navegador .fa-bars{
+        display: block;
+
+    }
+    .navegador .fa-bars:hover + ul{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        text-align:justify;
         position: fixed;
-        font-size: 24px;
-        margin: 10px;
-        color: #ead2d7;
+    }
+    .navegador ul:hover{
+        justify-content: space-evenly;
+        position: fixed;
+        display: block;
+        
+    }
+    .navegador ul:hover{
+        background-color: #560314;
+        width: 220px;
+        height: 100vh;
         z-index: 5;
-   } 
-   .navegador ul{
-    display: none;
-   }
- .fa-bars:hover + ul{
-    display: block;
-    flex-direction: column;    
-}
-    
-.navegador ul{
- text-align:center; 
- }
-    
+        top: 0;
+    }
+    .navegador ul:hover  li a{
+        color: #ead2d7;
+        display: flex;
+        justify-content: space-evenly;
+        
+    } 
+   
 }
 
 @media(max-width:800px){
@@ -234,10 +250,11 @@ section{
     .producto-destacado{
         border: 7px solid #560314;
         width: 200px;
-        height: 370px;
+        height: 350px;
+        align-items: center;
     }
     .producto-destacado img{
-        width: 60%;
+        width: 97%;
         height: 150px;
         object-fit: cover;
     }
@@ -250,11 +267,16 @@ section{
     .producto-destacado p{
         padding: 5px;
         font-family: 'Kanit', sans-serif;
-        text-align: center;
+        font-size: 10px;
+        text-align:justify;
+    }
+    .producto-destacado button{
+        font-size: 10px;
+        justify-content: center;
     }
     footer{
         padding: 5px;
-        font-size: 12px;       
+        font-size: 10px;       
     }
     footer section{
         padding: 5px;
