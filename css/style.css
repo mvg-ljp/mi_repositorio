@@ -75,8 +75,8 @@
 .portada img{
     display: flex;
     width: 100%;
-    height: 250px;
-    object-fit:inherit;
+    height: 400px;
+    object-fit:fill;
     filter:sepia(35%);
 }
 
@@ -90,7 +90,7 @@ main{
     font-size: 34px;
     color:#560314;
     text-align: center;
-    text-decoration:solid underline;
+    text-decoration:none;
 }
 .destacados{
     display: flex;
@@ -199,6 +199,9 @@ section{
     font-family: 'Kanit', sans-serif;
     font-size: 18px;
 }
+.derechos{
+    font-size: 12px;
+}
 /*fin de pie de pagina*/
 @media (min-width:300px) and (max-width:799px){
     .navegador ul {
@@ -286,12 +289,84 @@ section{
         align-items:baseline;
     }
 }
-/*servicios*/
+/*experiencias*/
 h2{
     font-size: 34px;
     text-align: center;
     width: 100%;
 }
+.exp{
+    display:flex ;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: space-evenly;
+}
+.nosotros{
+    margin: 5px;
+    border-color: #560314;
+    border: 3px solid;
+    padding: 3px;
+    width: 35%;
+}
+.nosotros h4{
+    color: #ead2d7;
+    background-color: #560314;
+    padding: 5px;
+}
+.nosotros:hover{
+    width: 45%;
+    transition: 0.7s;
+    position: relative;
+
+}
+.exp-menu{
+    margin: 5 px;
+    border-color: #560314;
+    border: 3px solid;
+    padding: 3px;
+    width: 35%;
+    text-align:inherit;
+    justify-content: start;
+}
+.exp-menu h4{
+    text-align: start;
+    color: #ead2d7;
+    background-color: #560314;
+    padding: 5px;
+}
+.exp-menu button{
+    padding: 3px;
+    display: none;
+    text-decoration: none;
+    
+}
+.exp-menu:hover button {
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;  
+    
+
+}
+.mexp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    font-family: 'Kanit', sans-serif; 
+    font-size: 18px;
+    color: #ead2d7;
+    justify-content: center;
+    background-color: #560314;
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    }
+.imgexp{
+    width: 35%;
+    height: inherit;
+}
+/*fin experiencia*/
 
 
 /*shop*/
@@ -558,7 +633,7 @@ main{
     font-family: 'Kanit', sans-serif;
     transition: 0.5s;
 }
-}
+
 /*ubicacion*/
 main{
     margin: 0;
@@ -598,6 +673,41 @@ h2{
     font-family: 'Kanit', sans-serif;
     text-align:start;
 }
+carousel-item {
+    height: 400px;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 650px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 60px;
+    width: 60px;
+    opacity: 1;
+    background: transparent;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color:#560314;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: -10px;
+  }
+  
+  .carousel-control-prev-icon::before,
+  .carousel-control-next-icon::before {
+    content: '';
+    display: inline-block;
+    border: 1px solid #560314;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    
+  }
 /*contacto*/
 main{
     padding: 10px;
