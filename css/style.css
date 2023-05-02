@@ -58,6 +58,7 @@
 
 }
 .navegador ul li a {
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
@@ -660,7 +661,25 @@ main{
     font-family: 'Kanit', sans-serif;
     transition: 0.5s;
 }
+.carrete{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+.carrete img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 0.5 ease;
+}
+.carrete img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 
+}
 /*ubicacion*/
 main{
     margin: 0;
