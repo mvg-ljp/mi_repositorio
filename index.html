@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./multimedia/img/logo/beer.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./multimedia/img/cbolog1-min.jpg" type="image/x-icon">
     <title>CABO</title>
-    <meta name="keywords" content="bebidas, tragos, promociones, cordoba">
+    <meta name="keywords" content="bebidas, tragos, promociones, cordoba, argentina">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,53 +14,74 @@
 
 <body>
     <header>
-        <div class="titulo">
+        <div class="titulo" style="background-color: #560314">
             <h1><strong>· CABO ·</strong></h1>
             <h2>Almacén de Bebidas</h2>
         </div>
-                  
-       
-        <nav class="navegador">
-            <i class="fa-solid fa-bars"></i>
-            <ul>
-                <li><a href="./index.html">Incio</a></li>
-                <li><a href="./pages/experiencias.html">Experiencias</a></li>
-                <li><a href="./pages/shop.html">Shop</a></li>
-                <li><a href="./pages/ubicacion.html">Ubicación</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li class="icono bajar"><a href="#pie"><i class="fa-solid fa-caret-down"></i></a></li>
-            </ul>
-        </nav>
         <div class="portada">
-            <img class="img-fluid"  src="./multimedia/img/logo/portada.jpg" alt="imagen principal">    
+            <img class="img-fluid" style="height: 180px; object-fit: cover;" src="./multimedia/img/corchos_1-min.jpg" alt="imagen principal">
+        </div>  
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid" style="background-color:#e8cad0; justify-content: end;">
+                
+                <button class="navbar-toggler"  style="color: #e8cad0; text-decoration-color: #e8cad0;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" style="background-color:#560314" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header" style="color: #e8cad0;">                      
+                       <figure>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong class="text-uppercase" style="color: #e8cad0;">Cabo</strong></h5>
+                        <p class="text-capitalize" style="color: #e8cad0">almacén de bebidas</p>
+                        </figure>
+                  
+                        <button style="color: #e8cad0;"type="button" class="btn-close"  style="color: #e8cad0;"  data-bs-dismiss="offcanvas" aria-label="cerrar" ></button>
+                        
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0" aria-current="page" href="./index.html">incio</a></li>
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0"  aria-current="page" href="./pages/experiencias.html">experiencias</a></li>
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0"  aria-current="page" href="./pages/shop.html">shop</a></li>
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0" aria-current="page" href="./pages/ubicacion.html">ubicación</a></li>
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0" aria-current="page" href="./pages/contacto.html">contacto</a></li>
+                        
+                        </ul>
+                  
+                    </div>
+                </div>
+            </div>
+        
+        </nav>
     </header>
    
     <main>
         <h3 class="subtitulo">DESTACADOS DE LA SEMANA</h3>
         <div class="destacados">
             <div class="producto-destacado">
-                <img src="./multimedia/img/productos/mosquitamuerta.jpg" alt="imagen del producto">
+                <img src="./multimedia/img/mosquitamuerta-min.jpg" alt="imagen del producto">
                 <h4>Blend de Tintas Mosquita Muerta</h4>
                 <p>Vino floral y con gran presencia de fruta. Ideal para disfrutar en compañía.</p>                
-                <button>Comprar</button>
+                <button><a style="text-decoration: none; color: #e8cad0;"href="./pages/shop.html">Comprar</a></button>
             </div>
             <div class="producto-destacado">
-                <img src="./multimedia/img/productos/seleccion.jpg" alt="imagen del producto">
+                <img src="./multimedia/img/seleccion-min.jpg" alt="imagen del producto">
                 <h4>Mosquita Muerta Selección.</h4>
                 <p>Te presentamos nuestro combo estrella. Ideal para todo tipo de ocasiones y también para regalar a quién más queres!</p>
-                <button>Comprar</button>
+                <button><a style="text-decoration: none; color: #e8cad0;" href="./pages/shop.html"> Comprar</a></button>
             </div>
             <div class="producto-destacado">
-                <img src="./multimedia/img/productos/rutini-SAUVIGNON-BLANC.jpg" alt="imagen del producto">
+                <img src="./multimedia/img/rutini-SAUVIGNON-BLANC-min.jpg" alt="imagen del producto">
                 <h4>Sauvignon Blanc - Rutini.</h4>
                 <p>Intensamente aromático, de caracter cítrico que recuerda al pomelo rosado y algunos toques herbáceos.</p>
-                <button>Comprar</button>
+                <button><a style="text-decoration: none; color: #e8cad0;"href="./pages/shop.html">Comprar</a></button>
             </div>
-            <div class="producto-destacado">
-                <img src="./multimedia/img/productos/bm.jpg" alt="imagen del producto">
-                <h4>Barra Móvil.</h4>
-                <p>Celebramos con vos. Contratá nuestro servicio barra de tragos.40% OFF</p>
-                <button>Contratar</button>
+            <div class="card mb-3" style="background-color: #e8cad0; border: solid #560314; width: max-content;">
+                <img src="./multimedia/img/bm-min.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="cabo-fiestas">
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize" style="font-family: 'Kanit', sans-serif;"><strong>barra móvil</strong> </h5>
+                  <p class="card-text" style="font-family: 'Kanit', sans-serif;">Celebramos con vos! Contratá nuestro servicio barra de tragos. Contratá nuestro servicio barra de tragos, escribinos  para obtener mayor información.</p>
+                  <button><a style="text-decoration: none; color: #e8cad0;" href="./pages/contacto.html">Contratar</a></button>
+                </div>
             </div>
         </div> 
     </main>

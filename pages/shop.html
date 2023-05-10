@@ -4,85 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../multimedia/img/logo/beer.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../multimedia/img/cbolog1-min.jpg" type="image/x-icon">
     <title>SHOP-CABO</title>
-    <meta name="keywords" content="bebidas, tragos, promociones, cordoba">
+    <meta name="keywords" content="bebidas, tragos, promociones, cordoba, champagne, fernet, vino, tinto, blanco, aperitivos">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="titulo">
+    <header style="background-color: #560314">
+        <div class="titulo" style="background-color: #560314">
             <h1><strong>· CABO ·</strong></h1>
             <h2>Almacén de Bebidas</h2>
         </div>
-        <nav class="navegador">
-            <i class="fa-solid fa-bars"></i>
-            <ul>
-                <li><a href="../index.html">Incio</a></li>
-                <li><a href="./experiencias.html">Experiencias</a></li>
-                <li><a href="./pages/shop.html">Shop</a></li>
-                <li><a href="../pages/ubicacion.html">Ubicación</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li class="icono bajar"><a href="#pie"><i class="fa-solid fa-caret-down"></i></a></li>
-            </ul>
-        </nav>
         <div class="portada">
-            <img src="../multimedia/img/logo/portada3.jpg" alt="imagen principal">
-        </div>
+            <img class="img-fluid" style="height: 180px; object-fit: cover;" src="../multimedia/img/corchos_1-min.jpg" alt="imagen principal">
+        </div> 
+        <nav class="navbar bg-body-tertiary" >
+            <div class="container-fluid" style="background-color:#e8cad0">
+                <a class="navbar-brand text-uppercase" href="./index.html"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="color:#e8cad0">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" style="background-color:#560314" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header" style="color: #e8cad0;">                      
+                       <figure>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong class="text-uppercase" style="color: #e8cad0;">Cabo</strong></h5>
+                        <p class="text-capitalize" style="color: #e8cad0">almacén de bebidas</p>
+                        </figure>
+                  
+                        <button type="button" class="btn-close"   data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+                        
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0" aria-current="page" href="../index.html">incio</a></li>
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0"  aria-current="page" href="./experiencias.html">experiencias</a></li>
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0"  aria-current="page" href="./shop.html">shop</a></li>
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0" aria-current="page" href="./ubicacion.html">ubicación</a></li>
+                            <li class="nav-item text-uppercase"><a class="nav-link active" style="color: #e8cad0" aria-current="page" href="./contacto.html">contacto</a></li>
+                        
+                        </ul>
+                  
+                    </div>
+                </div>
+            </div>
         
+        </nav>
+ 
     </header>
     <main>
-        <h2 class="ttshop">PRODUCTOS</h2>
-        <section class="shop">
-            <div class="producto1">
-                <img class="producto1__img" src="../multimedia/img/productos/mosquitamuerta.jpg" alt="imagen del producto">
-                <h4 class="producto1__tt">Blend de Tintas Mosquita Muerta.</h4>
-                <p class="producto1__texto">Vino Mosquita Muerta Blend De Tintas X 750cc. Precio:<strong > $4.500</strong></p>
-                <button class="producto1__boton">Comprar</button>
+        <h2 class="m-5">TIENDA ONLINE</h2>
+        <div class="row row-cols-1 row-cols-md-5 g-8" style="justify-content: space-evenly;">
+            <div class="col m-1">
+                <div class="card h-100" style="background-color: #e8cad0;">
+                    <img src="../multimedia/img/seleccion-min.jpg" class="card-img-top" alt="imagen del producto">
+                    <div class="producto p-2" style="font-family:'Kanit', sans-serif; color: #560314;">
+                        <h5 class="card-title">Selección Mosquita Muerta.</h5>
+                        <p class="card-text">TSet de vinos x 750 cc. <strong>Precio: $12.000</strong></p>
+                        <button class="producto1__boton">Comprar</button>
+                    </div>
+                </div>
             </div>
+            <div class="col m-1">
+                <div class="card h-100" style="background-color: #e8cad0;">
+                    <img src="../multimedia/img/mosquitamuerta-min.jpg" class="card-img-top" alt="imagen del producto">
+                    <div class="producto p-2" style="font-family:'Kanit', sans-serif; color: #560314;">
+                        <h5 class="card-title">Blend de Tintas Mosquita Muerta.</h5>
+                        <p class="card-text">Vino Mosquita Muerta Blend De Tintas X 750cc. Precio:<strong > $4.500</strong></p>
+                        <button class="producto1__boton">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col m-1">
+                <div class="card h-100" style="background-color: #e8cad0;">
+                    <img src="../multimedia/img/rutini-SAUVIGNON-BLANC-min.jpg" class="card-img-top" alt="imagen del producto">
+                    <div class="producto p-2" style="font-family:'Kanit', sans-serif; color: #560314;">
+                        <h5 class="card-title">Vino Blanco Rutini</h5>
+                        <p class="card-text">Sauvignon Blanc x 750 cc. Descuento del 15% comprando tres unidades.<strong> Precio: $4.999</strong></p>
+                        <button class="producto1__boton">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col m-1">
+                <div class="card h-100" style="background-color: #e8cad0;">
+                    <img src="../multimedia/img/th-min.jpg" class="card-img-top" alt="imagen del producto">
+                    <div class="producto p-2" style="font-family:'Kanit', sans-serif; color: #560314;">
+                        <h5 class="card-title">Combo Desgustación Blancos</h5>
+                        <p class="card-text">Reserva Del Fin Del Mundo Vino Chardonnay Caja X6u 750ml<strong> Precio: $10.999</strong></p>
+                        <button class="producto1__boton">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col m-1">
+                <div class="card h-100" style="background-color: #e8cad0;">
+                    <img src="../multimedia/img/combro spritz-min.jpg" class="card-img-top" alt="imagen del producto">
+                    <div class="producto p-2" style="font-family:'Kanit', sans-serif; color: #560314;">
+                        <h5 class="card-title">Combo Spritz.</h5>
+                        <p class="card-text">Aperol + Cinzano Spritz. Promo Lanzamiento:<strong>$3.800</strong></p>
+                        <button class="producto1__boton">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col m-1">
+                <div class="card h-100" style="background-color: #e8cad0;">
+                    <img src="../multimedia/img/moet.webp" class="card-img-top" alt="imagen del producto">
+                    <div class="producto p-2" style="font-family:'Kanit', sans-serif; color: #560314;">
+                        <h5 class="card-title">Champagne</h5>
+                        <p class="card-text">Champagne Moët & Chandon Rosé Impérial. Precio Exclusivo por Web:<strong>$4.800</strong></p></p>
+                        <button class="producto1__boton">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col m-1">
+                <div class="card h-100" style="background-color: #e8cad0;">
+                    <img src="../multimedia/img/desgustaciones-min.jpg" class="card-img-top" alt="imagen del producto">
+                    <div class="producto p-2" style="font-family:'Kanit', sans-serif; color: #560314;">
+                        <h5 class="card-title">Degustaciones</h5>
+                        <p class="card-text">Se parte de esta experiencia. Comunicate haciendo click <a style="text-decoration: none;" href="../pages/contacto.html">aquí</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col m-1">
+                 <div class="card h-100" style="background-color: #e8cad0;">
+                    <img src="../multimedia/img/tragos-3-min.jpg" class="card-img-top" alt="imagen del producto">
+                    <div class="producto p-2" style="font-family:'Kanit', sans-serif; color: #560314;">
+                        <h5 class="card-title">Barra de tragos</h5>
+                        <p class="card-text">Servicio exclusivo para eventos. Solicitá asesoramiento.</p>
+                        <button class="producto1__boton">Contratar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-            <div class="producto2">
-                <img class="producto2__img" src="../multimedia/img/productos/seleccion.jpg" alt="imagen del producto">
-                <h4 class="producto2__tt">Selección Mosquita Muerta.</h4>
-                <p class="producto2__texto">Set de vinos x 750 cc. <strong>Precio: $12.000.</strong></p>
-                <button class="producto2__boton">Comprar</button>
-            </div>
-            <div class="producto3">
-                <img class="producto3__img" src="../multimedia/img/productos/rutini-SAUVIGNON-BLANC.jpg" alt="imagen del producto">
-                <h4 class="producto3__tt">Vino Blanco Rutini.</h4>
-                <p class="producto3__texto">Sauvignon Blanc x 750 cc. Descuento del 15% comprando tres unidades.<strong> Precio: $4.999</strong></p>
-                <button class="producto3__boton">Comprar</button>
-            </div>
-            <div class="producto4">
-                <img class="producto4__img" src="../multimedia/img/productos/combro spritz.jpg" alt="imagen del producto">
-                <h4 class="producto4__tt">Combo Spritz.</h4>
-                <p class="producto4__texto">Aperol + Cinzano Spritz. Promo Lanzamiento:<strong>$3.800</strong></p>
-                <button class="producto4__boton">Comprar</button>
-            </div>
-            <div class="producto5">
-                <img class="producto5__img" src="../multimedia/img/productos/th.jpg" alt="imagen del producto">
-                <h4 class="producto5__tt">Combo Desgustación Blancos.</h4>
-                <p class="producto5__texto">Reserva Del Fin Del Mundo Vino Chardonnay Caja X6u 750ml<strong> Precio: $10.999</strong></p>
-                <button class="producto5__boton">Comprar</button>
-            </div>
-            <div class="producto6 producto6--destacar">
-                <img class="producto6__img producto6__img--destacar" src="../multimedia/img/productos/barra.jpg" alt="imagen del producto">
-                <h4 class="producto6__tt producto6__tt--destacar">Barra de tragos</h4>
-                <p class="producto6__texto producto6__texto--destacar">Servicio exclusivo para eventos. Solicitá asesoramiento.</p>
-                <button class="producto6__boton producto6__boton--destacar ">Contratar</button>
-            </div>
-        </section>
-        <aside>
-            <section class="carrete">
-                <img src="../multimedia/img/productos/barra-movil-de-bebidas-y-tragos.jpg" alt="imagen">
-                <img src="../multimedia/img/productos/barra.jpg" alt="imagen">
-                <img src="../multimedia/img/productos/combro spritz.jpg" alt="img">
-                <img src="../multimedia/img/productos/mosquitamuerta.jpg" alt="img">
-                <img src="../multimedia/img/productos/blancos.webp" alt="img">
-            </section>
-        </aside>
 
     </main>
     <footer id="pie">

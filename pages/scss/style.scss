@@ -1,90 +1,14 @@
 $bg-color:#560314
-$font-family:'Kanit', sans-serif
-/*titulos*/
-.titulo{
-    background-color:$bg-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    margin: 0;
-
-}
-.titulo h1 h2{
-    justify-content: center;
-    text-align:center;
-        h1{
-            color:#ead2d7 ;
-            font-size: 24px;
-            font-family: 'Kanit', sans-serif;
-            -webkit-text-stroke: 1px #560314;
-                 h2{
-                    color:#ead2d7 ;
-                    font-size: 24px;
-                    font-family: 'Kanit', sans-serif;
-                    -webkit-text-stroke: 1px #560314;
-                }
-            } 
-        }               
-/*fin titulos*/
-
+$font-family-sans-serif:'Kanit';
 /*Navegador*/
-.navegador {
-    background-color:#560314;
-    padding: 10px; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 35px;
-    justify-content: center;
-    top: -5px;
-        .fa-bars{
-            font-size: 24px;
-            margin: 10px;
-            color:#ead2d7;
-            display: none;
-
-    
-            ul{
-    
-                list-style: none;
-                display: flex;
-                li a {
-                    text-align: center;
-                    text-decoration: none;
-                    font-family: 'Kanit', sans-serif;
-                    color:#ead2d7;
-                    font-size: 18px;
-                    padding: 15px 20px;
-
-                }
-            }
-    
-        }
-    }
-
+nav{
+    color: #ead2d7;
+}
 
   /*Fin Navegador*/
 
-  /*Portada*/
-.portada{
-    position: relative;
-    img{
-        display: flex;
-        width: 100%;
-        height: 400px;
-        object-fit:fill;
-        filter:sepia(35%);
-    }
-  }
 
-
-/*Fin Portada*/
-main{
-    margin: 0;
-    ;
-}
+  
 .subtitulo{
     font-family: 'Kanit', sans-serif;
     font-size: 34px;
@@ -212,43 +136,8 @@ section{
 }
 /*fin de pie de pagina*/
 @media (min-width:300px) and (max-width:799px){
-    .navegador ul {
-        display: none;
-
-    }
-    .navegador .fa-bars{
-        display: block;
-
-    }
-    .navegador .fa-bars:hover + ul{
-        display: flex;
-        justify-content:center;
-        flex-direction: column;
-        text-align:justify;
-        position: fixed;
-    }
-    .navegador ul:hover{
-        justify-content: space-evenly;
-        position: fixed;
-        display: block;
-        
-    }
-    .navegador ul:hover{
-        background-color: #560314;
-        width: 220px;
-        height: 100vh;
-        z-index: 5;
-        top: 0;
-    }
-    .navegador ul:hover  li a{
-        color: #ead2d7;
-        display: flex;
-        justify-content: space-evenly;
-        
-    } 
    
-}
-
+     
 @media(max-width:800px){
     .titulo h1{
         font-size: 32px ;
@@ -303,62 +192,12 @@ h2{
     text-align: center;
     width: 100%;
 }
-.exp{
-    display:flex ;
-    flex-direction: row;
-    margin: 5px;
-    justify-content: space-evenly;
-}
-.nosotros{
-    margin: 5px;
-    border-color: #560314;
-    border: 3px solid;
-    padding: 3px;
-    width: 35%;
-}
-.nosotros h4{
-    color: #ead2d7;
-    background-color: #560314;
-    padding: 5px;
-}
+
 .nosotros:hover{
     width: 45%;
     transition: 0.7s;
     position: relative;
 
-}
-.exp-menu{
-    margin: 5 px;
-    border-color: #560314;
-    border: 3px solid;
-    padding: 3px;
-    width: 35%;
-    text-align:inherit;
-    justify-content: start;
-}
-.exp-menu h4{
-    text-align: start;
-    color: #ead2d7;
-    background-color: #560314;
-    padding: 5px;
-}
-.exp-menu button{
-    padding: 3px;
-    display: none;
-    text-decoration: none;
-    
-}
-.exp-menu:hover button {
-    display: block;
-    transition: 0.5s;
-    text-decoration: none;  
-    
-
-}
-.mexp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 button{
     font-family: 'Kanit', sans-serif; 
@@ -382,290 +221,36 @@ button{
     h4{
         font-size: 12px;
     }
-    .exp{
-        display: flex;
-        
-        width: 100%;
-
+#img-exp{
+        display: none;
+    
     }
-    button{
-        font-family: 'Kanit', sans-serif; 
-        font-size: 12px;
-        color: #ead2d7;
-        justify-content: center;
-        background-color: #560314;
-        padding: 5px;
-        margin: 5px;
-        width: 95%;
-        }
-
-}
-
 /*fin experiencia*/
 
 
 /*shop*/
-main{
-    margin: 0;
-    padding: 10px;
-}
-
-.ttshop{
-    color:#560314;
-    font-size: 34px;
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
-    padding: 10px;
-
-}
-.shop{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    flex-wrap:wrap;
-    margin: 5px;
+.producto{
     
-}
-.producto1{
-    margin: 10px;
-    width: 250px;
     border: 3px solid;
     border-color: #560314;
+    $font-family-sans-serif:'Kanit';
 }
-.producto1__img{
+.producto__img{
     padding: 3px;
     width: 100%;
     height: 250px;
     &:hover{
         transform: scale(2.5);
+        }
+    
     }
-    
-}
 
-    
-.producto1__tt{
-    padding: 3px;
-    text-align: center;
-    font-size: 16px;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto1__texto{
-    padding: 3px;
-    text-align:start;
-    font-size: 14px;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto1__boton{
-    margin: 10px;
-    padding: 7px 15px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #560314;
-    color: aliceblue;
-    font-family: 'Kanit', sans-serif;
-    transition: 0.5s;
-}
-.producto2{
-    margin: 10px;
-    width: 250px;
-    border: 3px solid;
-    border-color: #560314;
-}
-.producto2__img{
-    padding: 3px;
-    width: 100%;
-    height: 250px;
-}
-.producto2__tt{
-    padding: 3px;
-    text-align: center;
-    font-size: 16px;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto2__texto{
-    padding: 3px;
-    text-align:start;
-    font-size:14px ;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto2__boton{
-    margin: 10px;
-    padding: 7px 15px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #560314;
-    color: aliceblue;
-    font-family: 'Kanit', sans-serif;
-    transition: 0.5s;
-}
-.producto3{
-    margin: 10px;
-    width: 250px;
-    border: 3px solid;
-    border-color: #560314;
-}
-.producto3__img{
-    padding: 3px;
-    width: 100%;
-    height: 250px;
-}
-.producto3__tt{
-    padding: 3px;
-    text-align: center;
-    font-size:16px ;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto3__texto{
-    padding: 3px;
-    text-align:start;
-    font-size: 14px;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto3__boton{
-    margin: 10px;
-    padding: 7px 15px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #560314;
-    color: aliceblue;
-    font-family: 'Kanit', sans-serif;
-    transition: 0.5s;
-}
-.producto4{
-    margin: 10px;
-    width: 250px;
-    border: 3px solid;
-    border-color: #560314;
-}
-.producto4__img{
-    padding: 3px;
-    width: 100%;
-    height: 200px;
-}
-.producto4__tt{
-    padding: 3px;
-    text-align: center;
-    font-size:16px ;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto4__texto{
-    padding: 3px;
-    text-align:start;
-    font-size:14px ;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto4__boton{
-    margin: 10px;
-    padding: 7px 15px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #560314;
-    color: aliceblue;
-    font-family: 'Kanit', sans-serif;
-    transition: 0.5s;
-}
-.producto5{
-    margin: 10px;
-    width: 250px;
-    border: 3px solid;
-    border-color: #560314;
-}
-.producto5__img{
-    padding: 3px;
-    width: 100%;
-    height: 200px;
-}
-.producto5__tt{
-    padding: 3px;
-    text-align: center;
-    font-size: 16px;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto5__texto{
-    padding: 3px;
-    text-align:start;
-    font-size: 14px;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto5__boton{
-    margin: 10px;
-    padding: 7px 15px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #560314;
-    color: aliceblue;
-    font-family: 'Kanit', sans-serif;
-    transition: 0.5s;
-}
-.producto6{
-    margin: 10px;
-    width: 250px;
-    border: 3px solid;
-    border-color: #560314;
-}
-.producto6__img{
-    padding: 3px;
-    width: 100%;
-    height: 200px;
-}
-.producto6__tt{
-    padding: 3px;
-    text-align: center;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto6__texto{
-    padding: 3px;
-    text-align:start;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto6__boton{
-    margin: 10px;
-    padding: 7px 15px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #560314;
-    color: aliceblue;
-    font-family: 'Kanit', sans-serif;
-    transition: 0.5s;
-}
-.producto6--destacar{
-    margin: 10px;
-    width: 500px;
-    height: 350px;
-    border: 5px solid;
-    border-color: #560314;
+   
 
 }
-.producto6__img--destacar{
-    padding: 3px;
-    width: 100%;
-}
-.producto6__tt--destacar{
-    font-size: 20px ;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto6__texto--destacar{
-    font-size: 18px ;
-    font-family:'Kanit', sans-serif; ;
-    color: #560314;
-}
-.producto6__boton--destacar{
-    margin: 5px;
-    padding: 3px;
-    width: 98%;
+.producto__boton{
+    margin: 10px;
+    padding: 7px 15px;
     border: 0;
     border-radius: 5px;
     background-color: #560314;
@@ -673,81 +258,23 @@ main{
     font-family: 'Kanit', sans-serif;
     transition: 0.5s;
 }
-
 /*ubicacion*/
-main{
-    margin: 0;
-    padding: 10px;
-}
 h2{
     color:#560314;
     font-size: 34px;
     font-family: 'Kanit', sans-serif;
     text-align: center;
 }
-.ubicacion{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
+.locales{
+    $font-family:'Kanit', sans-serif;
+    h5{
+        $font-family:'Kanit', sans-serif;
+        p{
+            $font-family:'Kanit', sans-serif;
+        }
+    }
+   
 }
-.ubicacion .lista ul{
-    padding: 10px;
-}
-.ubicacion .mapa{
-    width: 60%;
-    border: 3px solid;
-    padding: 15px;
-}
-.lista h4{
-    color:#560314;
-    font-size: 24px;
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
-
-}
-.lista ul{
-    margin: 5px;
-    padding: 10px;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    text-align:start;
-}
-carousel-item {
-    height: 400px;
-  }
-  
-  .carousel-item img {
-    object-fit: cover;
-    height: 650px;
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    height: 60px;
-    width: 60px;
-    opacity: 1;
-    background: transparent;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color:#560314;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    margin-top: -10px;
-  }
-  
-  .carousel-control-prev-icon::before,
-  .carousel-control-next-icon::before {
-    content: '';
-    display: inline-block;
-    border: 1px solid #560314;
-    border-width: 0 3px 3px 0;
-    padding: 3px;
-    
-  }
   @media(max-width:800px){
     h2{
         font-size: 16px;
@@ -812,7 +339,7 @@ main{
     grid-area: Asunto:;
 }
 .formulariocontac label:nth-child(6){
-    grid-area: Mensaje:;
+    grid-area: Mensaje;
     }
 .formulariocontac input .formulariocontac textarea {
 width: 100%;
@@ -831,7 +358,6 @@ box-shadow: 0 0 10px  #560314(0, 0, 0, 0.5);
     border: 0;
     border-radius: 5px;
     justify-content: center;
-    text-align: ;
     background-color: #560314;
     color: aliceblue;
     font-family: 'Kanit', sans-serif;
